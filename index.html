@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" href="images/imereti.png">
+<title>Imereti Tourism - Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+<header>
+<div class="brand">
+<div class="logo">
+    <img src="images/imereti.png" alt="Imereti Tourism Logo">
+</div>
+<div>
+<div id="brandTitle" data-key="footerText">Imereti Tourism</div>
+<div id="brandSubtitle" style="font-size:12px;color:var(--muted)">Best tours & local guides</div>
+</div>
+</div>
+<nav>
+<a href="index.html" data-key="navHome" class="active"><i class="fas fa-home"></i> Home</a>
+<a href="register.html" data-key="navRegister"><i class="fas fa-edit"></i> Register</a>
+<a href="contact.html" data-key="navContact"><i class="fas fa-envelope"></i> Contact</a>
+<a href="about.html" data-key="navAbout"><i class="fas fa-users"></i> About Us</a>
+</nav>
+<div class="lang-switcher">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('ge')">GE</button>
+    <button onclick="setLanguage('de')">DE</button>
+</div>
+<div class="theme-switcher">
+    <button id="themeToggle"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+</div>
+    <div class="header-search">
+        <input type="search" id="headerSearch" class="header-search-input" placeholder="Search...">
+        <button class="header-search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+    </div>
+</header>
+
+<main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <img class="image" src="images/Discover Georgia — Mountains, Wine & Culture -Background.jpg" alt="Scenic view of Georgia" aria-hidden="true">
+        <div class="overlay">
+            <h1 data-key="heroTitle" class="animated-element" style="animation-delay: 0.2s;">Discover Georgia — Mountains, Wine & Culture</h1>
+            <p data-key="heroText" class="animated-element" style="animation-delay: 0.4s;">Explore curated tours across the country: city walks in Tbilisi, mountain treks in Svaneti, wine tastings in Kakheti and visit Kutaisi Simon and many other places.</p>
+            <a class="btn animated-element" href="#tours" data-key="heroBtn" style="animation-delay: 0.6s;">View tours</a>
+        </div>
+    </section>
+    
+    <!-- Popular tours -->
+    <section id="tours" aria-labelledby="toursHeading">
+        <h2 id="toursHeading" data-key="toursHeading" style="margin-bottom: 16px;">Popular tours</h2>
+        <div class="cards">
+            <article class="card animated-card">
+            <img src="images/Popular tours-Tbilisi.webp" alt="Tbilisi">
+            <h3 data-key="tour1Title">Sightseeing in Tbilisi</h3>
+            <p data-key="tour1Text">A day of city highlights, local food, and scenic viewpoints.</p>
+            <div class="card-actions">
+                <span class="price" id="tour1Price">$50</span>
+                <a class="btn" href="register.html?tour=tbilisi" data-key="tourBtn">Book now</a>
+            </div>
+            </article>
+            <article class="card animated-card">
+            <img src="images/Popular Tours-svaneti.jpg" alt="Svaneti">
+            <h3 data-key="tour2Title">Hiking in Svaneti</h3>
+            <p data-key="tour2Text">Multi-day treks among the high Caucasus mountains.</p>
+            <div class="card-actions">
+                <span class="price" id="tour2Price">$150</span>
+                <a class="btn" href="register.html?tour=svaneti" data-key="tourBtn">Book now</a>
+            </div>
+            </article>
+            <article class="card animated-card">
+            <img src="images/Popular Tours-Kakheti.jpg" alt="Khaheti">
+            <h3 data-key="tour3Title">Wine tour to Kakheti</h3>
+            <p data-key="tour3Text">Vineyards, cellars and traditional Georgian supra.</p>
+            <div class="card-actions">
+                <span class="price" id="tour3Price">$80</span>
+                <a class="btn" href="register.html?tour=kakheti" data-key="tourBtn">Book now</a>
+            </div>
+            </article>
+            <article class="card animated-card">
+            <img src="images/Downtown_Kutaisi_&_White_Bridge_as_seen_from_Mt_Gora_(August_2011)-cropped.jpg" alt="Kutaisi">
+            <h3 data-key="tour4Title">Kutaisi - Bikentias Kebab</h3>
+            <p data-key="tour4Text">Explore Kutaisi city highlights and taste the famous Bikentias Kebab.</p>
+            <div class="card-actions">
+                <span class="price" id="tour4Price">$40</span>
+                <a class="btn" href="register.html?tour=kutaisi" data-key="tourBtn">Book now</a>
+            </div>
+            </article>
+            <article class="card animated-card">
+            <img src="images/Popular Tours-Tusheti.webp" alt="Tusheti">
+            <h3 data-key="tour5Title">Tour to Tusheti</h3>
+            <p data-key="tour5Text">Explore the ancient towers and unique history of the remote Tusheti region.</p>
+            <div class="card-actions">
+                <span class="price" id="tour5Price">$180</span>
+                <a class="btn" href="register.html?tour=tusheti" data-key="tourBtn">Book now</a>
+            </div>
+            </article>
+            <article class="card animated-card">
+            <img src="images/Popular Tours-Zugdidi.jpg" alt="Zugdidi">
+            <h3 data-key="tour6Title">History of Zugdidi</h3>
+            <p data-key="tour6Text">Delve into the rich history of Zugdidi and the Dadiani Palaces.</p>
+            <div class="card-actions">
+                <span class="price" id="tour6Price">$60</span>
+                <a class="btn" href="register.html?tour=zugdidi" data-key="tourBtn">Book now</a>
+            </div>
+            </article>
+            <article class="card animated-card">
+            <img src="images/Popular Tours-Batumi.jpg" alt="Batumi">
+            <h3 data-key="tour7Title">Sea side of Batumi</h3>
+            <p data-key="tour7Text">Experience the beautiful sea side of Batumi and its vibrant city life.</p>
+            <div class="card-actions">
+                <span class="price" id="tour7Price">$70</span>
+                <a class="btn" href="register.html?tour=batumi" data-key="tourBtn">Book now</a>
+            </div>
+            </article>
+            <article class="card animated-card">
+            <img src="images/Kazbegi-Destinations.jpg" alt="Kazbegi">
+            <h3 data-key="tour8Title">Beauty of Kazbegi</h3>
+            <p data-key="tour8Text">Witness the breathtaking beauty of Kazbegi and the iconic Gergeti Trinity Church.</p>
+            <div class="card-actions">
+                <span class="price" id="tour8Price">$140</span>
+                <a class="btn" href="register.html?tour=kazbegi" data-key="tourBtn">Book now</a>
+            </div>
+            </article>
+        </div>
+    </section>
+    
+    <!-- Destinations -->
+    <section>
+        <h2 data-key="destHeading" style="margin-bottom: 16px;">Destinations</h2>
+        <ul class="cards destination-cards">
+            <li class="animated-card"><a href="tbilisi.html" class="card-link">
+                <article class="card"><img src="images/Tbilisi-Destinations.jpg" alt="Tbilisi at night"><div class="card-overlay"><h3 data-key="destTbilisi">Tbilisi</h3></div></article>
+            </a></li>
+            <li class="animated-card"><a href="svaneti.html" class="card-link">
+                <article class="card"><img src="images/Svaneti-Destinations.jpg" alt="Svaneti towers"><div class="card-overlay"><h3 data-key="destSvaneti">Svaneti</h3></div></article>
+            </a></li>
+            <li class="animated-card"><a href="kakheti.html" class="card-link">
+                <article class="card"><img src="images/Kakheti-Destinations.jpg" alt="Kakheti vineyards"><div class="card-overlay"><h3 data-key="destKakheti">Kakheti</h3></div></article>
+            </a></li>
+            <li class="animated-card"><a href="kutaisi.html" class="card-link">
+                <article class="card"><img src="images/Kutaisi-Destinations.jpg" alt="Kutaisi city view"><div class="card-overlay"><h3 data-key="destKutaisi">Kutaisi</h3></div></article>
+            </a></li>
+            <li class="animated-card"><a href="tusheti.html" class="card-link">
+                <article class="card"><img src="images/Tusheti-Destinations.jpg" alt="Tusheti"><div class="card-overlay"><h3 data-key="destTusheti">Tusheti</h3></div></article>
+            </a></li>
+            <li class="animated-card"><a href="zugdidi.html" class="card-link">
+                <article class="card"><img src="images/Zugdidi-Destinations.jpg" alt="Zugdidi"><div class="card-overlay"><h3 data-key="destZugdidi">Zugdidi</h3></div></article>
+            </a></li>
+            <li class="animated-card"><a href="batumi.html" class="card-link">
+                <article class="card"><img src="images/Batumi-Destinations.jpg" alt="Batumi"><div class="card-overlay"><h3 data-key="destBatumi">Batumi</h3></div></article>
+            </a></li>
+            <li class="animated-card"><a href="kazbegi.html" class="card-link">
+                <article class="card"><img src="images/Kazbegi-Destinations.jpg" alt="Kazbegi"><div class="card-overlay"><h3 data-key="destKazbegi">Kazbegi</h3></div></article>
+            </a></li>
+        </ul>
+    </section>
+
+<footer>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
+<div>© <span id="footerYear"></span> <span data-key="footerText">Imereti Tourism</span></div>
+<div style="color:var(--muted)">Made with ❤️</div>
+</div>
+</footer>
+
+<button id="toTopBtn" title="Go to top">↑</button>
+<script src="script.js"></script>
+
+</body>
+</html>

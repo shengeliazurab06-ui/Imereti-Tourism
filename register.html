@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" href="images/imereti.png">
+<title>Imereti Tourism - Register</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="wrap">
+<header>
+<div class="brand">
+<div class="logo">
+    <img src="images/imereti.png" alt="Imereti Tourism Logo">
+</div>
+<div>
+<div id="brandTitle" data-key="footerText">Imereti Tourism</div>
+<div id="brandSubtitle" style="font-size:12px;color:var(--muted)">Best tours & local guides</div>
+</div>
+</div>
+<nav>
+<a href="index.html" data-key="navHome"><i class="fas fa-home"></i> Home</a>
+<a href="register.html" data-key="navRegister" class="active"><i class="fas fa-edit"></i> Register</a>
+<a href="contact.html" data-key="navContact"><i class="fas fa-envelope"></i> Contact</a>
+<a href="about.html" data-key="navAbout"><i class="fas fa-users"></i> About Us</a>
+</nav>
+<div class="lang-switcher">
+    <button onclick="setLanguage('en')" class="active">EN</button>
+    <button onclick="setLanguage('ge')">GE</button>
+    <button onclick="setLanguage('de')">DE</button>
+</div>
+<div class="theme-switcher">
+    <button id="themeToggle"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+</div>
+<div class="header-search">
+    <input type="search" id="headerSearch" class="header-search-input" placeholder="Search...">
+    <button class="header-search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+</div>
+</header>
+
+<main class="main-content">
+    <div class="form-container">
+        <h2 data-key="registerTitle">Register</h2>
+        <p data-key="registerText">Create an account to book tours and manage your trips.</p>
+        <form id="registerForm">
+            <div class="form-group" style="animation-delay: 0.1s;">
+                <label for="name" data-key="regName">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group" style="animation-delay: 0.2s;">
+                <label for="surname" data-key="regSurname">Surname</label>
+                <input type="text" id="surname" required>
+            </div>
+            <div class="form-group" style="animation-delay: 0.3s;">
+                <label for="phone" data-key="regPhone">Phone Number</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group" style="animation-delay: 0.4s;">
+                <label for="email" data-key="regEmail">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group" style="animation-delay: 0.5s;">
+                <label for="tourDestination" data-key="regTour">Tour Destination</label>
+                <select id="tourDestination" required>
+                    <option value="tbilisi" data-key="tour1Title">Sightseeing in Tbilisi</option>
+                    <option value="svaneti" data-key="tour2Title">Hiking in Svaneti</option>
+                    <option value="kakheti" data-key="tour3Title">Wine tour to Kakheti</option>
+                    <option value="kutaisi" data-key="tour4Title">Kutaisi - Bikentias Kebab</option>
+                    <option value="tusheti" data-key="tour5Title">Tour to Tusheti</option>
+                    <option value="zugdidi" data-key="tour6Title">History of Zugdidi</option>
+                    <option value="batumi" data-key="tour7Title">Sea side of Batumi</option>
+                    <option value="kazbegi" data-key="tour8Title">Beauty of Kazbegi</option>
+                </select>
+            </div>
+            <div class="form-group" style="animation-delay: 0.6s;">
+                <label for="peopleCount" data-key="regPeople">How many people?</label>
+                <input type="number" id="peopleCount" value="1" min="1" required>
+            </div>
+            <div class="form-group full-width" style="animation-delay: 0.7s;">
+                <label for="notes" data-key="regNotes">Notes / Requests</label>
+                <textarea id="notes" rows="4"></textarea>
+            </div>
+            <div class="form-group price-display full-width" style="animation-delay: 0.8s;">
+                <span class="price-label" data-key="regPriceLabel">You have to pay:</span>
+                <span id="priceValue" class="price-value">$50</span>
+            </div>
+            <input type="submit" data-key="registerSubmit" value="Register" class="form-submit-btn" style="animation-delay: 0.9s;">
+        </form>
+        <div id="successMessage" style="display:none; margin-top: 20px; padding: 15px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 5px;">
+            <span data-key="orderSuccess">Thank you, your order has been received.</span>
+        </div>
+    
+</main>
+
+<footer style="margin-top: 40px;">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
+<div>© <span id="footerYear"></span> <span data-key="footerText">Imereti Tourism</span></div>
+<div style="color:var(--muted)">Made with ❤️</div>
+</div>
+</footer>
+</div>
+<button id="toTopBtn" title="Go to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

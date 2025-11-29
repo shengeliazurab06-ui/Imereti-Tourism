@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" href="images/imereti.png">
+<title>Imereti Tourism - About Us</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="wrap">
+<header>
+<div class="brand">
+<div class="logo">
+    <img src="images/imereti.png" alt="Imereti Tourism Logo">
+</div>
+<div>
+<div id="brandTitle" data-key="footerText">Imereti Tourism</div>
+<div id="brandSubtitle" style="font-size:12px;color:var(--muted)">Best tours & local guides</div>
+</div>
+</div>
+<nav>
+<a href="index.html" data-key="navHome"><i class="fas fa-home"></i> Home</a>
+<a href="register.html" data-key="navRegister"><i class="fas fa-edit"></i> Register</a>
+<a href="contact.html" data-key="navContact"><i class="fas fa-envelope"></i> Contact</a>
+<a href="about.html" data-key="navAbout" class="active"><i class="fas fa-users"></i> About Us</a>
+</nav>
+<div class="lang-switcher">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('ge')">GE</button>
+    <button onclick="setLanguage('de')">DE</button>
+</div>
+<div class="theme-switcher">
+    <button id="themeToggle"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+</div>
+<div class="header-search">
+    <input type="search" id="headerSearch" class="header-search-input" placeholder="Search...">
+    <button class="header-search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+</div>
+</header>
+
+    <div class="main-content">
+        <div id="about" class="about-section">
+            <h2 data-key="aboutUsHeading">About Imereti Tourism</h2>
+            <p data-key="aboutUsText1">Imereti Tourism was founded by a group of passionate travelers who fell in love with the rich culture, stunning landscapes, and warm hospitality of Georgia. Our mission is to share this love with the world by offering authentic and unforgettable travel experiences.</p>
+            <p data-key="aboutUsText2">We believe in responsible tourism that benefits local communities. We partner with local guides, family-owned guesthouses, and artisans to ensure your journey has a positive impact. From the vibrant streets of Tbilisi to the remote mountain villages of Svaneti, we are here to help you discover the true soul of Georgia.</p>
+            <div class="ceo-info">
+                <h3 data-key="aboutCEOs">CEO of Company:</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 40px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
+    <div>© <span id="footerYear"></span> <span data-key="footerText">Imereti Tourism</span></div>
+    <div style="color:var(--muted)">Made with ❤️</div>
+    </div>
+    </footer>
+</div>
+<button id="toTopBtn" title="Go to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

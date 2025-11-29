@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" href="images/imereti.png">
+<title>Imereti Tourism - Batumi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+<header>
+<div class="brand">
+<div class="logo">
+    <img src="images/imereti.png" alt="Imereti Tourism Logo">
+</div>
+<div>
+<div id="brandTitle" data-key="footerText">Imereti Tourism</div>
+<div id="brandSubtitle" style="font-size:12px;color:var(--muted)">Best tours & local guides</div>
+</div>
+</div>
+<nav>
+<a href="index.html" data-key="navHome"><i class="fas fa-home"></i> Home</a>
+<a href="register.html" data-key="navRegister"><i class="fas fa-edit"></i> Register</a>
+<a href="contact.html" data-key="navContact"><i class="fas fa-envelope"></i> Contact</a>
+<a href="about.html" data-key="navAbout"><i class="fas fa-users"></i> About Us</a>
+</nav>
+<div class="lang-switcher">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('ge')">GE</button>
+    <button onclick="setLanguage('de')">DE</button>
+</div>
+<div class="header-search">
+    <input type="search" id="headerSearch" class="header-search-input" placeholder="Search...">
+    <button class="header-search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+</div>
+</header>
+
+<div class="main-content">
+    <section class="about-section animated-element">
+        <h1 data-key="batumiWelcome">Welcome to Batumi!</h1>
+        <img src="images/Popular Tours-Batumi.jpg" alt="Batumi cityscape" style="width:100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+        <p data-key="batumiDesc1">Batumi is a vibrant port city on the Black Sea coast. It's known for its modern architecture, beautiful boulevard, botanical garden, and lively nightlife.</p>
+        <p data-key="batumiDesc2">Explore the "Sea side of Batumi" with our tour and enjoy the unique blend of subtropical nature and bustling city life.</p>
+        <a class="btn" href="register.html?tour=batumi" data-key="bookBatumiTour">Book Batumi Tour</a>
+    </section>
+</div>
+
+<footer>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;">
+<div>© <span id="footerYear"></span> <span data-key="footerText">Imereti Tourism</span></div>
+<div style="color:var(--muted)">Made with ❤️</div>
+</div>
+</footer>
+</div>
+<button id="toTopBtn" title="Go to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

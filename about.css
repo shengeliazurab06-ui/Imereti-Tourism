@@ -1,0 +1,20 @@
+.about-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--surface-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.about-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
